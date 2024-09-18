@@ -63,7 +63,7 @@ class JunitCalculatorTest {
 
         // when & then
         assertThrows<IllegalArgumentException> {
-            calculator.divide(2)
+            calculator.divide(0)
         }.apply {
             assertThat(message).isEqualTo("0으로 나눌 수 없습니다")
         }
